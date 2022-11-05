@@ -1,0 +1,54 @@
+@media (max-width: 1300px) {
+    .imagem{
+        top: 0px;
+        right: 5px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .imagem{
+        display: none;
+    }
+
+    form{
+        position: relative;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+
+@media (max-width: 700px) {
+    .entrar{
+        display: none;
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main{
+        position: absolute;
+        width: 100%;
+    }
+    
+    form{
+        width: 60%;
+    }
+
+    .info{
+        width: 100%;
+    }
+
+    section{
+        width: 90%;
+        height: 50%;
+    }
+
+    label{
+        margin-left: 0;
+    transform: translateX(0);
+    }
+}

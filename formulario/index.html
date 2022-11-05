@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarketingPage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="screen.css">
+</head>
+<body>
+    <header>
+        <h1>Marketing</h1>
+        <nav>
+            <a href="#">Produtos</a>
+            <a href="#">Fale Conosco</a>
+            <a href="#">Quem somos?</a>
+        </nav>
+        <button class="entrar">ENTRAR</button>
+    </header>
+
+    <main>
+        <form>
+            <div class="info">
+                <label for="">INSIRA SEU NOME</label>
+                <div class="input">
+                    <img src="assets/usuario.svg" alt="usuário" class="svg">
+                    <input type="text" name="nome" id="nome">
+                </div>
+            </div>
+
+            <div class="info">
+                <label for="">INSIRA SEU E-MAIL</label>
+                <div class="input">
+                    <img src="assets/email.svg" alt="usuário" class="svg">
+                    <input type="email" name="nome" id="email">
+                </div>
+            </div>
+
+            <div class="info">
+                <label for="">INSIRA SUA SENHA</label>
+                <div class="input">
+                    <img src="assets/senha.svg" alt="usuário" class="svg">
+                    <input type="password" name="nome" id="senha" minlength="6">
+                    <span class="span-olho"><img src="assets/ver.png" alt="Mostrar senha" class="olho"></span>
+                </div>
+            </div>
+
+            <button type="submit" class="submit">Cadastrar</button>
+        </form>
+
+        <section>
+            <h2 class="section-titles">Nome</h2>
+            <div class="section-conteudo" id="nomeUsuario"></div>
+    
+            <h2 class="section-titles">E-mail</h2>
+            <div class="section-conteudo" id="emailUsuario"></div>
+    
+            <h3 class="section-titles">Senha</h3>
+            <div class="section-conteudo" id="senhaUsuario"></div>
+    
+        </section>
+        <img src="assets/personagem.svg" alt="imagem de personagem" class="imagem">
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
