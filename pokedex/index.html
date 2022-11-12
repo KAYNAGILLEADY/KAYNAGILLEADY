@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="shortcut icon" href="assets/Pokeball_icon-icons.com_67533.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="statuspokemon.css">
+    <link rel="stylesheet" href="mobile.css">
+</head>
+
+<body>
+    <header>
+        <div style="display: flex; gap: 20px;">
+            <img src="assets/pokebola.png" alt="pokebola" style="height: 40px; width: 40px; margin-top: 0;">
+            <h1 class="pokedex">POKEDEX</h1>
+        </div>
+    </header>
+
+    <main>
+        <div style="text-align: center;" class="div-pokemon">
+            <div>
+                <h1 id="nome-pokemon" style="font-size: 40px;"></h1>
+                <img src="assets/seta-esquerda.png" alt="seta esquerda" class="setas-pokemon-esquerda setas-pokemon">
+                <img src="" alt="" id="imgPokemon">
+                <img src="assets/seta-direita.png" alt="seta direita" class="setas-pokemon-direita setas-pokemon">
+                <p id="id-pokemon" style="font-size: 30px;"></p>
+            </div>
+        </div>
+        <section>
+
+            <div class="tipo">
+                <div class="h2">
+                    <h2 class="tipo-h2">Tipo</h2>
+                </div>
+
+                <div style="width: 98%; padding: 7px; display: flex; gap: 20px; justify-content: center;" id="tipo">
+                    
+                </div>
+            </div>
+        
+            <div class="div-stats">
+                    <div id="div-stats">
+                        <h2 class="status">
+                            HP
+                        </h2>
+                        <div class="progress-bar" ></div>
+                    </div>
+
+            </div>
+        </section>
+    </main>
+
+    <div class="seta-esquerda-div setas" onmouseenter="animationEnter(event)" onmouseleave="animationLeave(event)">
+        <img src="assets/seta-esquerda.png" alt="seta para esquerda" class="seta-esquerda-img">
+    </div>
+    <div class="seta-direita-div setas" onmouseenter="animationEnter(event)" onmouseleave="animationLeave(event)">
+        <img src="assets/seta-direita.png" alt="seta para direita" class="seta-direita-img">
+    </div>
+</body>
+<script src="script.js"></script>
+<script>
+
+function animationEnter (e) {
+    e.target.style = `
+    opacity: 100%;
+    transition: opacity 1s;
+    `
+}
+
+function animationLeave (e) {
+    e.target.style = `
+    opacity: 0%;
+    transition: opacity 1s;
+    `
+}
+
+</script>
+</html>

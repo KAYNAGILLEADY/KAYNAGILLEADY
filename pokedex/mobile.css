@@ -1,0 +1,67 @@
+@media (max-width: 800px) {
+
+    *{
+        font-size: 14px;
+    }
+
+    .tipo-h2{
+        font-size: 25px
+    }
+
+    .h2{
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+
+    main{
+        display: block;
+    }
+
+    img{
+        margin: 0;
+        height: 18vh;
+        width: auto;
+    }
+
+    .setas{
+        display: none;
+    }
+
+    .setas-pokemon-esquerda{
+        display: inline;
+        background-color: white;
+        object-fit: contain;
+        height: 18vh;
+        width: 20px;
+        position: relative;
+        left: -20px;
+        border-radius: 20px;
+    }
+
+    .setas-pokemon-direita{
+        display: inline;
+        background-color: white;
+        object-fit: contain;
+        height: 18vh;
+        width: 20px;
+        position: relative;
+        right: -20px;
+        border-radius: 20px;
+    }
+
+    section{
+        width: 100vw;
+    }
+
+    .div-stats{
+        width: 100vw;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .div-stats{
+        grid-template-columns: none;
+        grid-gap: 20px;
+    }
+}

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background-color: rgb(1, 5, 61);
+    color: rgb(255, 255, 255);
+}
+
+header{
+    width: 100vw;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 89vh;
+    width: 100vw;
+}
+
+section{
+    height: 60vh;
+    width: 50vw;
+    border-radius: 20px;
+}
+
+img{
+    height: 50vh;
+    width: 25vw;
+    margin-top: 20px;
+    user-select: none;
+}
+
+.seta-esquerda-img{
+    position: relative;
+    height: 5em;
+    width: 5em;
+    margin-top: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    user-select: none;
+}
+
+.seta-esquerda-div{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: btn-animation 4s;
+    user-select: none;
+}
+
+.seta-direita-img{
+    position: relative;
+    height: 5em;
+    width: 5em;
+    margin-top: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    user-select: none;
+}
+
+.seta-direita-div{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    user-select: none;
+    opacity: 0;
+    animation: btn-animation 4s;
+}
+
+@keyframes btn-animation {
+    0%{
+        opacity: 100%;
+    }
+
+    100%{
+        opacity: 0%;
+    }
+}
